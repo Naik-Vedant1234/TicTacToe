@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <p>Enter Player 1 name:</p>
+    <input placeholder="Player 1" class="names" id="p1"><br>
+    <p>Enter Player 2 name:</p>
+    <input placeholder="Player 2" class="names" id="p2"><br>
+    <button id="submit">Submit</button>
+    <div class="container">
+        
+        <div class="game" style="justify-self: left;">
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+                <button class="block"></button>
+        </div>
+        <div class="score hide">
+            <table class="sc">
+                <caption><b><u>ScoreCard</u></b></caption>
+                <thead class="sc">
+                    <th scope="col" id="player_1" class="sc1">O</th>
+                    <th scope="col" id="player_2" class="sc1">X</th>
+                </thead>
+                <tbody>
+                    <td class="sc1" id="score_1">0</td>
+                    <td class="sc1" id="score_2">0</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button id="reset" href="#">Reset Game</button>
+    <div class="msg hide">
+        <p class="message">This is a text</p>
+        <button id="next" href="#">New Game</button>
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
